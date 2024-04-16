@@ -22,6 +22,28 @@ namespace ConsoleApp
             Console.WriteLine(intArray.Get(5));
 
             Console.WriteLine(intArray.Length());
+
+            ArrayG<double> doubleArray = new ArrayG<double>(3);
+            doubleArray.Add(8.3);
+            doubleArray.Add(37.32);
+            doubleArray.Add(1.15);
+            
+            Console.WriteLine(doubleArray.Get());
+            
+            doubleArray.Remove(0);
+            
+            Console.WriteLine(doubleArray.Get());
+            
+            ArrayG<string> stringArray = new ArrayG<string>(3);
+            stringArray.Add("Первый");
+            stringArray.Add("Второй");
+            stringArray.Add("Третий");
+            
+            Console.WriteLine(stringArray.Get());
+            
+            stringArray.Remove(0);
+            
+            Console.WriteLine(stringArray.Get());
         }
     }
     public class ArrayG<T>
